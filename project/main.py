@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLa
 import mysql.connector
 import os
 
-
+#Лаба №6
 class LoginDialog(QDialog):
     def __init__(self):
         super().__init__()
