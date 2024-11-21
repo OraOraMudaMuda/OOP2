@@ -11,3 +11,12 @@ def mark_completed(index):
         print(f"Задача '{tasks[index]['task']}' выполнена!")
     else:
         print("Ошибка: Неверный индекс задачи.") 
+
+def show_tasks():
+    if not tasks:  
+        print("Список задач пуст.")
+    else:
+        print("Список задач:")
+        for i, task in enumerate(tasks): 
+            status = "✔" if task["completed"] else "✘"  
+            print(f"{i}: {task['task']} [{status}]")
